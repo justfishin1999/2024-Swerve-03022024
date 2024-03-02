@@ -1,0 +1,193 @@
+{
+  "version": 1.0,
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 1.3351518646165252,
+        "y": 5.583099697005081
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 1.4348884463124048,
+        "y": 5.590353266582963
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 3.475015859984327,
+        "y": 5.583099697005081
+      },
+      "prevControl": {
+        "x": 3.5750053596430367,
+        "y": 5.584548820188541
+      },
+      "nextControl": {
+        "x": 2.8038766978007885,
+        "y": 5.573373042480681
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 1.3351518646165252,
+        "y": 5.583099697005081
+      },
+      "prevControl": {
+        "x": 1.4351518646165253,
+        "y": 5.583099697005081
+      },
+      "nextControl": {
+        "x": 0.971293385808228,
+        "y": 5.583099697005081
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 10.400393881356484,
+        "y": 8.024489982629254
+      },
+      "prevControl": {
+        "x": 10.316439892347763,
+        "y": 8.07881978779662
+      },
+      "nextControl": {
+        "x": 11.096483095632474,
+        "y": 7.57402429496802
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 1.3351518646165252,
+        "y": 5.583099697005081
+      },
+      "prevControl": {
+        "x": 1.4266833678588018,
+        "y": 5.623373558431683
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": null
+    }
+  ],
+  "rotationTargets": [],
+  "constraintZones": [],
+  "eventMarkers": [
+    {
+      "name": "Intake-1",
+      "waypointRelativePos": 0.35,
+      "command": {
+        "type": "parallel",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "RunIndex"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Shoot-1",
+      "waypointRelativePos": 1.75,
+      "command": {
+        "type": "sequential",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "ShootSpeaker"
+              }
+            },
+            {
+              "type": "wait",
+              "data": {
+                "waitTime": 0.5
+              }
+            },
+            {
+              "type": "named",
+              "data": {
+                "name": "StopShooter"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Intake-2",
+      "waypointRelativePos": 2.6,
+      "command": {
+        "type": "parallel",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "RunIndex"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Shoot-2",
+      "waypointRelativePos": 4.0,
+      "command": {
+        "type": "sequential",
+        "data": {
+          "commands": [
+            {
+              "type": "named",
+              "data": {
+                "name": "ShootSpeaker"
+              }
+            },
+            {
+              "type": "wait",
+              "data": {
+                "waitTime": 0.5
+              }
+            },
+            {
+              "type": "named",
+              "data": {
+                "name": "StopShooter"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "globalConstraints": {
+    "maxVelocity": 3.0,
+    "maxAcceleration": 2.0,
+    "maxAngularVelocity": 540.0,
+    "maxAngularAcceleration": 720.0
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": 0,
+    "rotateFast": false
+  },
+  "reversed": false,
+  "folder": null,
+  "previewStartingState": {
+    "rotation": 0,
+    "velocity": 0
+  },
+  "useDefaultConstraints": false
+}
